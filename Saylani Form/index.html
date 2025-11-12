@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saylani Registration Form</title>
+</head>
+
+<body>
+    <h3 align="center">Saylani Registration Form</h3>
+    <form action="" method="post">
+        <table border="1" cellpadding="5" cellspacing="0" align="center">
+            
+            <!-- Personal Info -->
+            <!-- Full Name row -->
+            <tr>
+                <td><label for="full_name">Full Name</label></td>
+                <td><input type="text" id="full_name" name="full_name" placeholder="Enter your full name" required /></td>
+            </tr>
+
+            <!-- Father Name row -->
+            <tr>
+                <td><label for="father_name">Father / Guardian Name</label></td>
+                <td><input type="text" id="father_name" name="father_name" placeholder="Enter father's name" required></td>
+            </tr>
+
+            <!-- Date of Birth row -->
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+
+            <!-- Gender radio buttons -->
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </td>
+            </tr>
+            
+            <!-- CNIC row -->
+            <tr>
+                <td><label for="cnic">CNIC / ID No.</label></td>
+                <td><input type="text" id="cnic" name="cnic" placeholder="42101-1234567-1"></td>
+            </tr>
+
+            <!-- Contact Info -->
+            <tr>
+                <td><label for="mobile">Mobile Number</label></td>
+                <td><input type="text" id="mobile" name="mobile" placeholder="03XX-XXXXXXX" required></td>
+            </tr>
+
+            <!-- Email row -->
+            <tr>
+                <td><label for="email">Email Address</label></td>
+                <td><input type="email" id="email" name="email" placeholder="example@email.com"></td>
+            </tr>
+            
+            <!-- City row -->
+            <tr>
+                <td><label for="city">City</label></td>
+                <td><input type="text" id="city" name="city" placeholder="Enter your city"></td>
+            </tr>
+
+            <!-- Address row -->
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td>
+                    <textarea id="address" name="address" rows="3" cols="30" placeholder="Enter full address"></textarea>
+                </td>
+            </tr>
+            
+                        <!-- Last Qualification dropdown -->
+            <tr>
+                <td><label for="last_qualification">Last Qualification</label></td>
+                <td>
+                    <select id="last_qualification" name="last_qualification">
+                        <option value="">-- Select --</option>
+                        <option value="matric">Matric</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="graduate">Graduate</option>
+                        <option value="postgraduate">Postgraduate</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <!-- Course Selection (multiple choice) -->
+            <tr>
+                <td>Course Applying For</td>
+                <td>
+                    <label><input type="checkbox" name="course[]" value="web_dev"> Web Development</label><br />
+                    <label><input type="checkbox" name="course[]" value="python"> Python</label><br />
+                    <label><input type="checkbox" name="course[]" value="data_science"> Data Science</label><br />
+                    <label><input type="checkbox" name="course[]" value="mobile_app"> Mobile App</label>
+                </td>
+            </tr>
+            
+            <!-- Document Uploads -->
+            <tr>
+                <td><label for="photo">Upload Photo (Passport size)</label></td>
+                <td><input type="file" id="photo" name="photo" accept="image"></td>
+            </tr>
+            
+             <!-- Laptop Availability Question -->
+            <tr>
+                <td>Do you have a laptop?</td>
+                <td>
+                    <label><input type="radio" name="laptop" value="yes" required> Yes</label>
+                    <label><input type="radio" name="laptop" value="no"> No</label>
+                </td>
+            </tr>
+
+            <!-- Declaration -->
+            <tr>
+                <td colspan="2">
+                    <label>
+                        <input type="checkbox" name="declaration" value="agree" required>
+                        I hereby declare that the information given above is correct to the best of my knowledge.
+                        Further, I will abide by all the established and future regulations and policies of SMIT.
+                        I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any other activity, political or ethical, but learning during my stay in the program.
+                    </label>
+                </td>
+            </tr>
+            
+            <!-- Buttons -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        
+        </table>
+    </form>
+</body>
+</html>
+
